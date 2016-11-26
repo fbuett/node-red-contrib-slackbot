@@ -24,7 +24,7 @@ module.exports = function(RED) {
         }
         
         this.on('input', function (msg) {
-
+            console.log(msg);
             node.bot.reply(msg.message, msg.payload);  
         });
     }
